@@ -1,0 +1,13 @@
+@import './blocks/accordion.scss';
+@import './blocks/slider.scss';
+
+$color_body: #2c3e50;
+
+body {
+    background: $color_body;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
