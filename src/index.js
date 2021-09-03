@@ -18,6 +18,7 @@ btnArr.forEach(item => {
 
 slider.addEventListener('click', function () {
     this.classList.toggle('switch-on');
+    resetAccordionState()
 });
 
 function closeOtherAccordion(item) {
@@ -26,4 +27,12 @@ function closeOtherAccordion(item) {
             contentTextArr[i].classList.remove('active');
         }
     }
+}
+
+function resetAccordionState() {
+    contentTextArr.forEach(item => {
+        if(item.classList.contains('active')) {
+            item.classList.remove('active')
+        }
+    })  
 }
